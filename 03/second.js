@@ -22,9 +22,6 @@ for (let i = 0; i < lines.length; i++) {
         startIndex,
         endIndex + 1,
       );
-      if (i === 1) {
-        console.log(string);
-      }
 
       for (let numberMatch of string.matchAll(/(\d+)/g)) {
         let lastIndex = numberMatch.index + numberMatch[0].length - 1;
@@ -38,9 +35,6 @@ for (let i = 0; i < lines.length; i++) {
     }
 
     if (gears.length === 2) {
-      if (i === 1) {
-        console.log(gears);
-      }
       gearRatios.push(gears[0] * gears[1]);
     }
   }

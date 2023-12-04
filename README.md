@@ -1,10 +1,19 @@
-# Node.js template
+# Advent of Code 2023
 
-This is a Node.js project.
+Solving [Advent of Code 2023](https://adventofcode.com/2023) with [Bun](https://bun.sh/) on [Code Sandbox](https://codesandbox.io).
 
-Add your [configuration](https://codesandbox.io/docs/projects/learn/setting-up/tasks) to optimize it for [CodeSandbox](https://codesandbox.io/p/dashboard).
+## Running samples
 
-## Resources
+Visit the [project on codesandbox](https://codesandbox.io/p/github/h3rmanj/aoc-2023) to run in a terminal in the browser.
 
-- [CodeSandbox — Docs](https://codesandbox.io/docs/learn)
-- [CodeSandbox — Discord](https://discord.gg/Ggarp3pX5H)
+Each day has a separate folder, containing a `first.js` and `second.js` for each part.
+
+```bash
+# run part one of day 3
+bun 03/first.js
+```
+
+## Remarks
+
+None of this code is meant to be read.
+I've just thrown shit on the wall until the wall has the correct number of shits.
