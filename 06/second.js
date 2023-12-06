@@ -29,15 +29,11 @@ let numberOfWaysToWin = 0;
 const middle = Math.floor(totalTime / 2);
 
 for (var i = middle; winningDistance < getDistance(i, totalTime); i++) {
-  if (getDistance(i, totalTime) > winningDistance) {
-    numberOfWaysToWin++;
-  }
+  numberOfWaysToWin++;
 }
 
 for (var i = middle - 1; winningDistance < getDistance(i, totalTime); i--) {
-  if (getDistance(i, totalTime) > winningDistance) {
-    numberOfWaysToWin++;
-  }
+  numberOfWaysToWin++;
 }
 
 console.log(numberOfWaysToWin);

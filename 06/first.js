@@ -28,15 +28,11 @@ for (var raceIndex = 0; raceIndex < times.length; raceIndex++) {
   const winningDistance = distances[raceIndex];
 
   for (var i = middle; winningDistance < getDistance(i, totalTime); i++) {
-    if (getDistance(i, totalTime) > winningDistance) {
-      numberOfWaysToWin++;
-    }
+    numberOfWaysToWin++;
   }
 
   for (var i = middle - 1; winningDistance < getDistance(i, totalTime); i--) {
-    if (getDistance(i, totalTime) > winningDistance) {
-      numberOfWaysToWin++;
-    }
+    numberOfWaysToWin++;
   }
 
   totalNumberOfWaysToWin *= numberOfWaysToWin;
