@@ -7,7 +7,7 @@ let cache = new Map();
 let results = [];
 let keys = [];
 
-let loopStart = -1;
+let loopStartIndex = -1;
 
 for (let iteration = 0; iteration < 1_000_000_000; iteration++) {
   let key = rows.flat().join("");
@@ -15,7 +15,7 @@ for (let iteration = 0; iteration < 1_000_000_000; iteration++) {
 
   if (cache.has(key)) {
     rows = cache.get(key);
-    loopStart = keys.indexOf(key);
+    loopStartIndex = keys.indexOf(key);
     break;
   }
 
@@ -68,6 +68,7 @@ for (let iteration = 0; iteration < 1_000_000_000; iteration++) {
 console.log(
   results[
     results.length -
-      ((1_000_000_000 - loopStart + 1) % (results.length - loopStart))
+      1 -
+      ((1_000_000_000 - loopStartIndex) % (results.length - loopStartIndex))
   ],
 );
