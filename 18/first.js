@@ -1,7 +1,5 @@
 import { input } from "./input.js";
 
-import fs from "node:fs";
-
 let actions = input
   .split("\n")
   .map((a) => a.split(" ").slice(0, -1))
